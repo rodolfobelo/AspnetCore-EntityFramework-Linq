@@ -1,16 +1,18 @@
 ﻿using AutoMapper;
-using FilmesApi.Data.Dtos.Cinema;
+using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 
-namespace FilmesApi.Profiles;
-
-public class CinemaProfile : Profile
+namespace FilmesApi.Profiles
 {
-    public CinemaProfile()
+    public class CinemaProfile : Profile
     {
-        CreateMap<CreateCinemaDto, Cinema>();
-        CreateMap<Cinema, ReadCinemaDto>();
-        CreateMap<Cinema, UpdateCinemaDto>();
-        //CreateMap<UpdateCinemaDto, Cinema>();
+        public CinemaProfile()
+        {
+            CreateMap<CreateCinemaDto, Cinema>();
+            CreateMap<Cinema, ReadCinemaDto>()
+                .ForMember(cinemaDto => cinemaDto.Endereco, 
+                    opt => opt.MapFrom(cinema => cinema.Endereco));
+            CreateMap<UpdateCinemaDto, Cinema>();
+        }
     }
 }

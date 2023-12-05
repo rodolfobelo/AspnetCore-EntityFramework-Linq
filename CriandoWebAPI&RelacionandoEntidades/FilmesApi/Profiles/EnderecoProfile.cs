@@ -1,15 +1,16 @@
 ﻿using AutoMapper;
-using FilmesApi.Data.Dtos.Endereco;
+using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 
-namespace FilmesApi.Profiles;
-
-public class EnderecoProfile : Profile
+namespace FilmesApi.Profiles
 {
-    public EnderecoProfile()
+    public class EnderecoProfile : Profile
     {
-        CreateMap<CreateEnderecoDto, Endereco>();
-        CreateMap<Endereco, ReadEnderecoDto>();
-        CreateMap<UpdateEnderecoDto, Endereco>();
+        public EnderecoProfile()
+        {
+            CreateMap<CreateEnderecoDto, Endereco>();
+            CreateMap<Endereco, ReadEnderecoDto>();
+            CreateMap<UpdateEnderecoDto, Endereco>();
+        }
     }
 }
