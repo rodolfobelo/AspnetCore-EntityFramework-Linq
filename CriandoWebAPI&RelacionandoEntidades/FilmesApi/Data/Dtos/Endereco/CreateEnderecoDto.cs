@@ -1,9 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace FilmesApi.Data.Dtos.Endereco;
-
-public class CreateEnderecoDto
+﻿namespace FilmesApi.Data.Dtos.Endereco
 {
-    public string Logradouro { get; set; }
-    public int Numero { get; set; }
+    public class CreateEnderecoDto
+    {
+        public string Logradouro { get; set; }
+        public int Numero { get; set; }
+    }
 }
