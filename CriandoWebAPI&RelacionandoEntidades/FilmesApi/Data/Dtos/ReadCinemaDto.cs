@@ -1,6 +1,4 @@
-﻿using FilmesApi.Data.Dtos.Endereco;
-
-namespace FilmesApi.Data.Dtos.Cinema
+﻿namespace FilmesApi.Data.Dtos
 {
     public class ReadCinemaDto
     {

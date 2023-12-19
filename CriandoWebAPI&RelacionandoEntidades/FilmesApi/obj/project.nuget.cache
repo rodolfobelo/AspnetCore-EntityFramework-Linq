@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wjh5fzzCbJHdBFpHSvUYWue4BTXyeCw8Bpznu1Wk6Yb0t58nvZ9ugT2gdjmbo5qTYCIYP0DmBpa9hVOPSRLz/w==",
+  "dgSpecHash": "bwKeWBIOWtHkADY4OPrt+ZTzMCQ7bCOwN3FuRaenmjLdVDv9LdkARTcbpDkVErBA+T3nIuhOLEJtuqTdFWvc+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodolfo.belo\\Documents\\dev\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj",
+  "projectFilePath": "C:\\Users\\rodolfo.belo\\Documents\\GitHub\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rodolfo.belo\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\rodolfo.belo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodolfo.belo\\Documents\\dev\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj": {}
+    "C:\\Users\\rodolfo.belo\\Documents\\GitHub\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodolfo.belo\\Documents\\dev\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj": {
+    "C:\\Users\\rodolfo.belo\\Documents\\GitHub\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodolfo.belo\\Documents\\dev\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj",
+        "projectUniqueName": "C:\\Users\\rodolfo.belo\\Documents\\GitHub\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj",
         "projectName": "FilmesApi",
-        "projectPath": "C:\\Users\\rodolfo.belo\\Documents\\dev\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj",
+        "projectPath": "C:\\Users\\rodolfo.belo\\Documents\\GitHub\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\FilmesApi.csproj",
         "packagesPath": "C:\\Users\\rodolfo.belo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodolfo.belo\\Documents\\dev\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\obj\\",
+        "outputPath": "C:\\Users\\rodolfo.belo\\Documents\\GitHub\\AspnetCore-EntityFramework-Linq\\CriandoWebAPI&RelacionandoEntidades\\FilmesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rodolfo.belo\\AppData\\Roaming\\NuGet\\NuGet.Config",

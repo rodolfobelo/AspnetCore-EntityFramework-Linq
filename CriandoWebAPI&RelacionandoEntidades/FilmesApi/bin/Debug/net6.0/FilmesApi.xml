@@ -4,7 +4,7 @@
         <name>FilmesApi</name>
     </assembly>
     <members>
-        <member name="M:FilmesApi.Controllers.FilmeController.AdicionaFilme(FilmesApi.Data.Dtos.Filme.CreateFilmeDto)">
+        <member name="M:FilmesApi.Controllers.FilmeController.AdicionaFilme(FilmesApi.Data.Dtos.CreateFilmeDto)">
             <summary>
             Adiciona um filme ao banco de dados
             </summary>
