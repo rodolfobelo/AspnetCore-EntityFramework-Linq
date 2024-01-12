@@ -2,13 +2,14 @@
 using FilmesApi.Data.Dtos;
 using FilmesApi.Models;
 
-namespace FilmesApi.Profiles;
-
-public class SessaoProfile : Profile
+namespace FilmesApi.Profiles
 {
-    public SessaoProfile()
+    public class SessaoProfile : Profile
     {
-        CreateMap<CreateSessaoDto, Sessao>();
-        CreateMap<Sessao, ReadSessaoDto>();
+        public SessaoProfile()
+        {
+            CreateMap<CreateSessaoDto, Sessao>();
+            CreateMap<Sessao, ReadSessaoDto>();
+        }
     }
 }

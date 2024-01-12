@@ -1,7 +1,8 @@
-﻿namespace FilmesApi.Data.Dtos;
-
-public class ReadSessaoDto
+﻿namespace FilmesApi.Data.Dtos
 {
-    public int Id { get; set; }
-    public int FilmeId { get; set; }
+    public class ReadSessaoDto
+    {
+        public int FilmeId { get; set; }
+        public int CinemaId { get; set; }
+    }
 }

@@ -1,46 +1,50 @@
 ﻿using AutoMapper;
-using FilmesApi.Data;
 using FilmesApi.Data.Dtos;
+using FilmesApi.Data;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FilmesApi.Controllers;
-[ApiController]
-[Route("[session]")]
-public class SessaoController : ControllerBase
+namespace FilmesApi.Controllers
 {
-    private FilmeContext _context;
-    private IMapper _mapper;
-    public SessaoController(FilmeContext context, IMapper mapper)
+    [ApiController]
+    [Route("[controller]")]
+    public class SessaoController : ControllerBase
     {
-        _context = context;
-        _mapper = mapper;
-    }
+        private FilmeContext _context;
+        private IMapper _mapper;
 
-    [HttpPost]
-    public IActionResult AdicionarSessao(CreateSessaoDto dto)
-    {
-        Sessao sessao = _mapper.Map<Sessao>(dto);
-        _context.Sessoes.Add(sessao);
-        _context.SaveChanges();
-        return CreatedAtAction(nameof(RecuperarSessoesPorId), new {Id = sessao.Id}, sessao);
-    }
-
-    [HttpGet]
-    public IEnumerable<ReadSessaoDto> RecuperarSessoes()
-    {
-        return _mapper.Map<List<ReadSessaoDto>>(_context.Sessoes.ToList());
-    }
-
-    [HttpGet("{id}")]
-    public IActionResult RecuperarSessoesPorId(int id)
-    {
-        Sessao sessao = _context.Sessoes.FirstOrDefault(s => s.Id == id);
-        if (sessao != null)
+        public SessaoController(FilmeContext context, IMapper mapper)
         {
-            ReadSessaoDto readSessaoDto = _mapper.Map<ReadSessaoDto>(sessao);
-            return Ok(readSessaoDto);
+            _context = context;
+            _mapper = mapper;
         }
-        return NotFound();
+
+        [HttpPost]
+        public IActionResult AdicionaSessao(CreateSessaoDto dto)
+        {
+            Sessao sessao = _mapper.Map<Sessao>(dto);
+            _context.Sessoes.Add(sessao);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(RecuperaSessoesPorId), new { filmeId = sessao.FilmeId, cinemaId = sessao.CinemaId }, sessao);
+        }
+
+        [HttpGet]
+        public IEnumerable<ReadSessaoDto> RecuperaSessoes()
+        {
+            return _mapper.Map<List<ReadSessaoDto>>(_context.Sessoes.ToList());
+        }
+
+        [HttpGet("{filmeId}/{cinemaId}")]
+        public IActionResult RecuperaSessoesPorId(int filmeId, int cinemaId)
+        {
+            Sessao sessao = _context.Sessoes.FirstOrDefault(sessao => sessao.FilmeId == filmeId && sessao.CinemaId == cinemaId);
+            if (sessao != null)
+            {
+                ReadSessaoDto sessaoDto = _mapper.Map<ReadSessaoDto>(sessao);
+
+                return Ok(sessaoDto);
+            }
+            return NotFound();
+        }
     }
 }

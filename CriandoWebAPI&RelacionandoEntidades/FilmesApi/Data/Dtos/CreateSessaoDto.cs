@@ -1,6 +1,10 @@
-﻿namespace FilmesApi.Data.Dtos;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class CreateSessaoDto
+namespace FilmesApi.Data.Dtos
 {
-    public int FilmeId { get; set; }
+    public class CreateSessaoDto
+    {
+        public int FilmeId { get; set; }
+        public int CinemaId { get; set; }
+    }
 }
